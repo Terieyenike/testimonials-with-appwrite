@@ -38,7 +38,21 @@
 </template>
 
 <script setup>
-import { getComment } from "~/utils";
+import { Client, Databases } from "appwrite";
+
+const runtimeConfig = useRuntimeConfig();
+
+const client = new Client();
+const databases = new Databases(client);
+
+client
+  .setEndpoint(runtimeConfig.public.API_ENDPOINT)
+  .setProject(runtimeConfig.public.PROJECT_ID);
+
+const getComment = databases.listDocuments(
+  runtimeConfig.public.DATABASE_ID,
+  runtimeConfig.public.COLLECTION_ID
+);
 
 const items = ref(null);
 
