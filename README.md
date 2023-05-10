@@ -1,42 +1,27 @@
-# Nuxt 3 Minimal Starter
+# Testimonials in Nuxt and Appwrite
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A testimonial page is a statement about the validation and satisfaction of a company tool by happy customer comments on social media platforms like Twitter, LinkedIn, and so on.
 
-## Setup
+To add a new testimonial, use [Appwrite Cloud](https://cloud.appwrite.io/) from your dashboard and display its content on the client side.
 
-Make sure to install the dependencies:
+## Demo
 
-```bash
-# yarn
-yarn install
+![testimonials with appwrite](https://github.com/Terieyenike/appwrite-todos/assets/25850598/5757ad92-0f11-4571-a7e7-b895f7a2c73f)
 
-# npm
-npm install
+View the demo, [here](#).
 
-# pnpm
-pnpm install
-```
+## Tech Stack
 
-## Development Server
+Client: Nuxt, Tailwind CSS
 
-Start the development server on `http://localhost:3000`
+Server: Appwrite, Appwrite Cloud
 
-```bash
-npm run dev
-```
+## Environment Variables
 
-## Production
+To run this project, you will need to add the following environment variables to your .env file
 
-Build the application for production:
+Reference the [.env.local](.env.local)
 
-```bash
-npm run build
-```
+## Author
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Teri Eyenike
