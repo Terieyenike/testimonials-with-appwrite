@@ -2,7 +2,7 @@
   <testimonials />
 </template>
 
-<script setup lang="ts">
+<script setup>
 useHead({
   title: "Read customers' feedback",
 });
